@@ -1,0 +1,133 @@
+{
+    "plots": [
+        {
+            "title": "The First Plot",
+            "image": "https://placehold.co/600x400",
+            "plot_id": "59",
+            "discord": "https://discord.gg/plot1",
+            "website": "https://example.com/plots/1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "title": "The Second Plot",
+            "image": "https://placehold.co/600x400",
+            "plot_id": "58",
+            "discord": "https://discord.gg/plot2",
+            "website": "https://example.com/plots/2",
+            "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "title": "The Third Plot",
+            "image": "https://placehold.co/600x400",
+            "plot_id": "57",
+            "discord": "https://discord.gg/plot3",
+            "website": "https://example.com/plots/3",
+            "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+            "title": "The Fourth Plot",
+            "image": "https://placehold.co/600x400",
+            "plot_id": "56",
+            "discord": "https://discord.gg/plot4",
+            "website": "https://example.com/plots/4",
+            "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        },
+        {
+            "title": "The Fifth Plot",
+            "image": "https://placehold.co/600x400",
+            "plot_id": "55",
+            "discord": "https://discord.gg/plot5",
+            "website": "https://example.com/plots/5",
+            "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+            "title": "The Sixth Plot",
+            "image": "https://placehold.co/600x400",
+            "plot_id": "54",
+            "discord": "https://discord.gg/plot6",
+            "website": "https://example.com/plots/6",
+            "description": "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu."
+        },
+        {
+            "title": "The Seventh Plot",
+            "image": "https://placehold.co/600x400",
+            "plot_id": "53",
+            "discord": "https://discord.gg/plot1",
+            "website": "https://example.com/plots/1",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "title": "The Eight Plot",
+            "image": "https://placehold.co/600x400",
+            "plot_id": "52",
+            "discord": "https://discord.gg/plot2",
+            "website": "https://example.com/plots/2",
+            "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "title": "The Ninth Plot",
+            "image": "https://placehold.co/600x400",
+            "plot_id": "51",
+            "discord": "https://discord.gg/plot3",
+            "website": "https://example.com/plots/3",
+            "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+            "title": "The Tenth Plot",
+            "image": "https://placehold.co/600x400",
+            "plot_id": "50",
+            "discord": "https://discord.gg/plot4",
+            "website": "https://example.com/plots/4",
+            "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        },
+        {
+            "title": "The Eleventh Plot",
+            "image": "https://placehold.co/600x400",
+            "plot_id": "46",
+            "discord": "https://discord.gg/plot5",
+            "website": "https://example.com/plots/5",
+            "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+            "title": "The Twelveth Plot",
+            "image": "https://placehold.co/600x400",
+            "plot_id": "45",
+            "discord": "https://discord.gg/plot6",
+            "website": "https://example.com/plots/6",
+            "description": "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu."
+        },
+        {
+            "title": "The Thirtheenth Plot",
+            "image": "https://placehold.co/600x400",
+            "plot_id": "44",
+            "discord": "https://discord.gg/plot3",
+            "website": "https://example.com/plots/3",
+            "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+            "title": "The Fourteenth Plot",
+            "image": "https://placehold.co/600x400",
+            "plot_id": "41",
+            "discord": "https://discord.gg/plot4",
+            "website": "https://example.com/plots/4",
+            "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        },
+        {
+            "title": "The Fifteenth Plot",
+            "image": "https://placehold.co/600x400",
+            "plot_id": "34",
+            "discord": "https://discord.gg/plot5",
+            "website": "https://example.com/plots/5",
+            "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+            "title": "The Sixteenth Plot",
+            "image": "https://placehold.co/600x400",
+            "plot_id": "32",
+            "discord": "https://discord.gg/plot6",
+            "website": "https://example.com/plots/6",
+            "description": "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu."
+        }
+    ]
+}
+  

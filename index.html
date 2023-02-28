@@ -10,7 +10,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
     body{
         font-family: 'Roboto', sans-serif;
-        font-size: 11px;
+        font-size: 16px;
         font-weight: 400;
         line-height: 1.5;
         color: #212529;
@@ -53,8 +53,6 @@
     .owomap{
         position: relative;
         float: left;
-        /* width: 100%; */
-        /* height: 100%; */
         max-height: 787px;
         max-width: 1280px;
     }
@@ -69,13 +67,6 @@
         box-shadow: rgb(255, 204, 0) 0px 0px 10px 5px  !important;
     }
     .owomap img{
-        /* position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0; */
-        z-index: 0;
-        /* width: 100%; */
         margin: 0 auto;
         max-width: 100%;
         max-height: 100vh;
@@ -92,6 +83,25 @@
         border-radius: 10px;
         z-index: 200;
     }
+
+    .infobox img{
+        margin: 10px 0;
+        max-width: 100%;
+    }
+
+    .infobox ul.infobox__details{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .infobox a{
+        color: #fff;
+    }
+
+    .hidden{
+        display: none;
+    }
 </style>
 <body>
     <div class="header">
@@ -99,7 +109,13 @@
     </div>
     <div class="infobox">
         <h2 class="infobox__title">Interactive map</h2>
-        <p>click a participating plot!</p>
+        <p class="infobox__plotnumber hidden">1</p>
+        <p class="infobox__description">click a participating plot!</p>
+        <ul class="infobox__details hidden">
+            <li class="discord"><a class="discord" href="http://discord.gg" target="_blank" rel="noopener noreferrer">Discord</a></li>
+            <li class="website"><a href="http://example.com" target="_blank" rel="noopener noreferrer">Website</a></li>
+        </ul>
+        <img src="https://placehold.co/600x600" class="hidden" alt="Plot image">
     </div>
     <div class="container">  
         <div class="owomap">
@@ -182,7 +198,144 @@
         </div>
     </div>
     <script>
+        // Import the plotdata.json file
+        const plotData = [
+            {
+                "title": "The First Plot",
+                "image": "https://placehold.co/600x400",
+                "plot_id": "59",
+                "discord": "https://discord.gg/plot1",
+                "website": "https://example.com/plots/1",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "title": "The Second Plot",
+                "image": "https://placehold.co/600x400",
+                "plot_id": "58",
+                "discord": "https://discord.gg/plot2",
+                "website": "https://example.com/plots/2",
+                "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {
+                "title": "The Third Plot",
+                "image": "https://placehold.co/600x400",
+                "plot_id": "57",
+                "discord": "https://discord.gg/plot3",
+                "website": "https://example.com/plots/3",
+                "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            },
+            {
+                "title": "Gang Gang <OwO>",
+                "image": "https://placehold.co/600x400",
+                "plot_id": "56",
+                "discord": "https://discord.gg/plot4",
+                "website": "https://example.com/plots/4",
+                "description": "This plot belongs to the main host of the event, Gang Gang <OwO>!"
+            },
+            {
+                "title": "The Fifth Plot",
+                "image": "https://placehold.co/600x400",
+                "plot_id": "55",
+                "discord": "https://discord.gg/plot5",
+                "website": "https://example.com/plots/5",
+                "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            },
+            {
+                "title": "The Sixth Plot",
+                "image": "https://placehold.co/600x400",
+                "plot_id": "54",
+                "discord": "https://discord.gg/plot6",
+                "website": "https://example.com/plots/6",
+                "description": "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu."
+            },
+            {
+                "title": "The Seventh Plot",
+                "image": "https://placehold.co/600x400",
+                "plot_id": "53",
+                "discord": "https://discord.gg/plot1",
+                "website": "https://example.com/plots/1",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            },
+            {
+                "title": "The Eight Plot",
+                "image": "https://placehold.co/600x400",
+                "plot_id": "52",
+                "discord": "https://discord.gg/plot2",
+                "website": "https://example.com/plots/2",
+                "description": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            {
+                "title": "The Ninth Plot",
+                "image": "https://placehold.co/600x400",
+                "plot_id": "51",
+                "discord": "https://discord.gg/plot3",
+                "website": "https://example.com/plots/3",
+                "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            },
+            {
+                "title": "The Tenth Plot",
+                "image": "https://placehold.co/600x400",
+                "plot_id": "50",
+                "discord": "https://discord.gg/plot4",
+                "website": "https://example.com/plots/4",
+                "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            },
+            {
+                "title": "The Eleventh Plot",
+                "image": "https://placehold.co/600x400",
+                "plot_id": "46",
+                "discord": "https://discord.gg/plot5",
+                "website": "https://example.com/plots/5",
+                "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            },
+            {
+                "title": "The Twelveth Plot",
+                "image": "https://placehold.co/600x400",
+                "plot_id": "45",
+                "discord": "https://discord.gg/plot6",
+                "website": "https://example.com/plots/6",
+                "description": "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu."
+            },
+            {
+                "title": "The Thirtheenth Plot",
+                "image": "https://placehold.co/600x400",
+                "plot_id": "44",
+                "discord": "https://discord.gg/plot3",
+                "website": "https://example.com/plots/3",
+                "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            },
+            {
+                "title": "The Fourteenth Plot",
+                "image": "https://placehold.co/600x400",
+                "plot_id": "41",
+                "discord": "https://discord.gg/plot4",
+                "website": "https://example.com/plots/4",
+                "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            },
+            {
+                "title": "The Fifteenth Plot",
+                "image": "https://placehold.co/600x400",
+                "plot_id": "34",
+                "discord": "https://discord.gg/plot5",
+                "website": "https://example.com/plots/5",
+                "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            },
+            {
+                "title": "The Sixteenth Plot",
+                "image": "https://placehold.co/600x400",
+                "plot_id": "32",
+                "discord": "https://discord.gg/plot6",
+                "website": "https://example.com/plots/6",
+                "description": "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu."
+            }
+        ]
+
+        const infoboxTitle = document.querySelector('h2.infobox__title');
+        const infoboxDescription = document.querySelector('.infobox__description');
+        const infoboxImg = document.querySelector('.infobox img');
+        const infoboxDetails = document.querySelector('ul.infobox__details');
         const plotElements = document.querySelectorAll('.owomap > svg .plot');
+        const infboxPlotnumber = document.querySelector('.infobox__plotnumber');
 
         let activePlot = null;
 
@@ -209,16 +362,15 @@
 
             // Click event listener
             plotElement.addEventListener('click', function(event) {
-                console.log(activePlot)
-                // Get the first child element of the plot element
-                const firstChild = plotElement.firstElementChild;
-
                 // Get the data-plot-id attribute value of the clicked plot element
                 const plotId = plotElement.getAttribute('data-plot-id');
 
+                // Find the plot object with the matching plot_id property
+                const plotObject = plotData.find(plot => plot.plot_id === plotId);
+
                 // Update the infobox title element with the plot id
-                const infoboxTitle = document.querySelector('h2.infobox__title');
-                infoboxTitle.textContent = `Plot ${plotId}`;
+                infoboxTitle.textContent = `${plotObject.title}`;
+                infoboxDescription.textContent = `${plotObject.description}`;
 
                 // Remove the "active" class from the previously clicked plot, if there is one
                 if (activePlot) {
@@ -227,6 +379,9 @@
                     activeFirstChild.removeAttribute('filter');
                 }
 
+                // Get the first child element of the plot element
+                const firstChild = plotElement.firstElementChild;
+
                 // Add the "active" class to the newly clicked plot
                 plotElement.classList.add('active');
                 firstChild.setAttribute('filter', 'url(#sofGlow)');
@@ -234,10 +389,20 @@
                 // Set the newly clicked plot as the active plot
                 activePlot = plotElement;
 
-                // Code to execute when the plot element is clicked
-                console.log('The plot element was clicked!');
-            });
+                // Populate the infobox details with the plot object data
+                infoboxImg.classList.remove('hidden');
+                infoboxImg.src = `${plotObject.image}`;
 
+                infboxPlotnumber.classList.remove('hidden');
+                infboxPlotnumber.textContent = `Plot ${plotObject.plot_id}`;
+
+                infoboxDetails.classList.remove('hidden');
+                infoboxDetails.innerHTML = `
+                    <li class="discord"><a class="discord" href="${plotObject.discord}" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                    <li class="website"><a href="${plotObject.website}" target="_blank" rel="noopener noreferrer">Website</a></li>
+                `;
+
+            });
         });
     </script>
 </body>
