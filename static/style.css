@@ -26,13 +26,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 90vh;
+    min-height: 85vh;
 }
 
 .header{
     text-align: center;
-    padding: 5px 0;
+    padding: 25px 0 0 0;
     z-index: 2;
+    height: 10vh;
 }
 
 .infobox{
@@ -42,7 +43,7 @@ body{
     top: 30px;
     left: 30px;
     width: 20vw;
-    background-color: rgba(153, 19, 5, 0.5);
+    background-color: rgb(153, 19, 5);
     border-radius: 10px;
     z-index: 200;
 }
@@ -84,10 +85,11 @@ svg.svgoverlay{
 }
 
 .header h1{
-    font-family: 'Beatrix Antiqua';
     font-size: 3em;
     color: #ffe5bf;
     margin: 0;
+    padding: 0;
+    line-height: unset;
 }
 
 .owomap svg g.plot polygon, .owomap svg g.plot path{
@@ -98,7 +100,8 @@ svg.svgoverlay{
     cursor: pointer !important;
     fill: transparent  !important;
     fill-opacity: 0.5  !important;
-    box-shadow: rgb(255, 204, 0) 0px 0px 10px 5px  !important;
+    stroke: #ffe5bf;
+    box-shadow: rgb(255, 229, 191) 0px 0px 10px 5px  !important;
 }
 .owomap img{
     margin: 0 auto;
