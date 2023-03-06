@@ -29,13 +29,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 90vh;
+        min-height: 85vh;
     }
 
     .header{
         text-align: center;
-        padding: 5px 0;
+        padding: 25px 0 0 0;
         z-index: 2;
+        height: 10vh;
     }
 
     .infobox{
@@ -90,6 +91,8 @@
         font-size: 3em;
         color: #ffe5bf;
         margin: 0;
+        padding: 0;
+        line-height: unset;
     }
 
     .owomap svg g.plot polygon, .owomap svg g.plot path{
@@ -100,7 +103,7 @@
         cursor: pointer !important;
         fill: transparent  !important;
         fill-opacity: 0.5  !important;
-        box-shadow: rgb(255, 204, 0) 0px 0px 10px 5px  !important;
+        box-shadow: rgb(255, 229, 191) 0px 0px 10px 5px  !important;
     }
     .owomap img{
         margin: 0 auto;
@@ -129,7 +132,7 @@
 </style>
 <body>
     <div class="header">
-        <h1>OWO STREET FESTIVAL</h1>
+        <h1>OwO STREET FESTIVAL</h1>
     </div>
     <div class="infobox">
         <h2 class="infobox__title">Interactive map</h2>
@@ -154,7 +157,7 @@
                         <feGaussianBlur in="thicken" stdDeviation="10" result="blurred" />
                 
                         <!-- Change the colour -->
-                        <feFlood flood-color="rgb(255, 204, 0)" result="glowColor" />
+                        <feFlood flood-color="rgb(255, 229, 191)" result="glowColor" />
                 
                         <!-- Color in the glows -->
                         <feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored" />
@@ -225,7 +228,7 @@
         // Import the plotdata.json file
         const plotData = [
             {
-                "title": "The First Plot",
+                "title": "Gang Gang <OwO>",
                 "image": "https://placehold.co/600x400",
                 "plot_id": "59",
                 "discord": "https://discord.gg/plot1",
@@ -257,7 +260,7 @@
                 "description": "This plot belongs to the main host of the event, Gang Gang <OwO>!"
             },
             {
-                "title": "The Fifth Plot",
+                "title": "Gang Gang <OwO>",
                 "image": "https://placehold.co/600x400",
                 "plot_id": "55",
                 "discord": "https://discord.gg/plot5",
@@ -273,12 +276,12 @@
                 "description": "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu."
             },
             {
-                "title": "The Seventh Plot",
-                "image": "https://placehold.co/600x400",
+                "title": "deathRow <DTR>",
+                "image": "https://i.imgur.com/3Bi8051.png",
                 "plot_id": "53",
                 "discord": "https://discord.gg/plot1",
                 "website": "https://example.com/plots/1",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                "description": "deathRow <DTR> will be hosting a Triple Triad club on their plot, players can come and challenge the available deathRow members to a game of Triple Triad for a chance to win some prizes!"
             },
             {
                 "title": "The Eight Plot",
@@ -297,7 +300,7 @@
                 "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
             },
             {
-                "title": "The Tenth Plot",
+                "title": "Gang Gang <OwO>",
                 "image": "https://placehold.co/600x400",
                 "plot_id": "50",
                 "discord": "https://discord.gg/plot4",
