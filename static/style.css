@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+@font-face {
+    font-family: 'Beatrix Antiqua';
+    src: url('beatrix-antiqua-black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffdba7;
+    text-align: left;
+    background-color: #d73c37;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.header{
+    text-align: center;
+    padding: 5px 0;
+    z-index: 2;
+}
+
+.infobox{
+    position: absolute;
+    color: ffdba7;
+    padding: 15px;
+    top: 30px;
+    left: 30px;
+    width: 20vw;
+    background-color: rgba(153, 19, 5, 0.5);
+    border-radius: 10px;
+    z-index: 200;
+}
+
+@media (max-width: 767px) {
+    .header{
+        position: relative;
+        padding: 10px;
+    }
+
+    .infobox{
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 90%;
+        margin: 0 auto;
+        max-width: 100vw;
+    }
+
+    .container{
+        min-height: 100%;
+        margin-top: 25px;
+    }
+}
+svg.svgoverlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+}
+.owomap{
+    position: relative;
+    float: left;
+    max-height: 782px;
+    max-width: 1280px;
+    border: 4px solid #ffe5bf;
+}
+
+.header h1{
+    font-family: 'Beatrix Antiqua';
+    font-size: 3em;
+    color: #ffe5bf;
+    margin: 0;
+}
+
+.owomap svg g.plot polygon, .owomap svg g.plot path{
+    fill: transparent;
+    stroke: #d73c37;
+}
+.owomap svg g.plot:hover > polygon, .owomap svg g.plot:hover > path{
+    cursor: pointer !important;
+    fill: transparent  !important;
+    fill-opacity: 0.5  !important;
+    box-shadow: rgb(255, 204, 0) 0px 0px 10px 5px  !important;
+}
+.owomap img{
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100vh;
+}
+
+.infobox img{
+    margin: 10px 0;
+    max-width: 100%;
+}
+
+.infobox ul.infobox__details{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.infobox a{
+    color: #fff;
+}
+
+.hidden{
+    display: none;
+}
