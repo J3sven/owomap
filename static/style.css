@@ -96,7 +96,10 @@ svg.svgoverlay{
     fill: transparent;
     stroke: #d73c37;
 }
-.owomap svg g.plot:hover > polygon, .owomap svg g.plot:hover > path{
+.owomap svg g.plot:hover > polygon, 
+.owomap svg g.plot.active > polygon, 
+.owomap svg g.plot.active > path, 
+.owomap svg g.plot:hover > path{
     cursor: pointer !important;
     fill: transparent  !important;
     fill-opacity: 0.5  !important;
