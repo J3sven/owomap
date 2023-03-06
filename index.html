@@ -254,24 +254,24 @@
 
         plotElements.forEach(function(plotElement) {
             // Mouseover event listener
-            plotElement.addEventListener('mouseover', function(event) {
+            // plotElement.addEventListener('mouseover', function(event) {
                 // Get the first child element of the plot element
-                const firstChild = plotElement.firstElementChild;
+                // const firstChild = plotElement.firstElementChild;
 
                 // Add the filter to the first child element
-                firstChild.setAttribute('filter', 'url(#sofGlow)');
-            });
+                // firstChild.setAttribute('filter', 'url(#sofGlow)');
+            // });
 
             // Mouseout event listener
-            plotElement.addEventListener('mouseout', function(event) {
-                // Get the first child element of the plot element
-                const firstChild = plotElement.firstElementChild;
+            // plotElement.addEventListener('mouseout', function(event) {
+            //     // Get the first child element of the plot element
+            //     const firstChild = plotElement.firstElementChild;
 
-                // Remove the filter from the first child element if the plot element does not have the "active" class
-                if (!plotElement.classList.contains('active')) {
-                    firstChild.removeAttribute('filter');
-                }
-            });
+            //     // Remove the filter from the first child element if the plot element does not have the "active" class
+            //     if (!plotElement.classList.contains('active')) {
+            //         firstChild.removeAttribute('filter');
+            //     }
+            // });
 
             // Click event listener
             plotElement.addEventListener('click', function(event) {
