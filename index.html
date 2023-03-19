@@ -103,8 +103,7 @@
         </div>
     </div>
     <script>
-        // Import the plotdata.json file
-        const plotData = [
+        // const plotData = [
             {
                 "title": "Gang Gang <OwO>",
                 "image": "https://placehold.co/600x400",
@@ -157,8 +156,8 @@
                 "title": "deathRow <DTR>",
                 "image": "https://i.imgur.com/3Bi8051.png",
                 "plot_id": "53",
-                "discord": "https://discord.gg/plot1",
-                "website": "https://example.com/plots/1",
+                "discord": "https://discord.gg/JQxGF8jfK5",
+                "website": "https://dtr-discord.com/",
                 "description": "deathRow <DTR> will be hosting a Triple Triad club on their plot, players can come and challenge the available deathRow members to a game of Triple Triad for a chance to win some prizes!"
             },
             {
@@ -242,6 +241,10 @@
                 "description": "Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu."
             }
         ]
+
+        //fetch plotdata.json and put the response in a constant called plotData
+
+        const plotData = await fetch('plotdata.json').then(response => response.json());
 
         const infoboxTitle = document.querySelector('h2.infobox__title');
         const infoboxDescription = document.querySelector('.infobox__description');
