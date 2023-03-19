@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Beatrix Antiqua';
-    src: url('./beatrix-antiqua-black.woff') format('woff');
+    src: url('beatrix-antiqua-black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
 }
